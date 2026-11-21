@@ -37,10 +37,13 @@ def ots(*args):
 
 
 def block_of(proof):
-    """The Bitcoin block number if the proof is complete, else None."""
+    """The earliest Bitcoin block number in the proof, else None.
+
+    A proof can hold several calendars' answers, some finished and some still waiting, so one
+    finished answer is enough, and the earliest block is the one that matters."""
     r = ots("info", proof)
-    m = BLOCK.search((r.stdout or "") + (r.stderr or ""))
-    return int(m.group(1)) if m else None
+    found = BLOCK.findall((r.stdout or "") + (r.stderr or ""))
+    return min(int(b) for b in found) if found else None
 
 
 def stamp_new(rows, force):
