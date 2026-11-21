@@ -1,0 +1,4 @@
+vota-ledger-checkpoint-v1
+seq: 7
+day: 2026-11-21
+entry_hash: 38826a98693cf63a72454e9e63fddf9a2361d02581348d9802793e5c03f6f2f3
