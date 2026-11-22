@@ -10,6 +10,13 @@
   "seq": 7,
   "day": "2026-11-21",
   "entry_hash": "38826a98693cf63a72454e9e63fddf9a2361d02581348d9802793e5c03f6f2f3",
+  "status": "final",
+  "block": 976921
+ },
+ {
+  "seq": 8,
+  "day": "2026-11-22",
+  "entry_hash": "f323f1b660cabfb98105cdeb12f7ccb5fc850a45ff77802a219ab8351cf15c4c",
   "status": "pending",
   "block": null
  }
